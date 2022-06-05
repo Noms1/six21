@@ -67,7 +67,7 @@ e621.get_post(Id)
 
 ## Post Object
 
-<A single post object is as follows:> \
+<A single post object is as follows> \
 id: The ID number of the post. \
 created_at: The time the post was created in the format of YYYY-MM-DDTHH:MM:SS.MS+00:00. \
 updated_at: The time the post was last updated in the format of YYYY-MM-DDTHH:MM:SS.MS+00:00. \
