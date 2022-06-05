@@ -28,35 +28,35 @@ e621.Set_User("NAME_OF_PROJECT")
 ```
 <Searching>
 
-Searching will return a list of posts that fit the criteria that the tags provide \
+Searching will return a list of posts that fit the criteria that the tags provide  
 Usage:
 ```python
 e621.search(tags, page, limit)
 ```
-- ```tags``` Is what keywords you want to search for are and should be given in a list \
-- ```page``` is what page you want to go to during the search and should be given in a int \
-- ```limit``` is the limit to how many posts you want to retrieve \
+- ```tags``` Is what keywords you want to search for are and should be given in a list  
+- ```page``` is what page you want to go to during the search and should be given in a int  
+- ```limit``` is the limit to how many posts you want to retrieve  
 
 
 <Recent Posts>
 
-Getting recent posts will return a list of posts that have been most recently posted to e6 \
+Getting recent posts will return a list of posts that have been most recently posted to e6  
 Usage:
 ```python
 e621.recent(limit)
 ```
-- ```limit``` is the limit to how many posts you want to retrieve \
+- ```limit``` is the limit to how many posts you want to retrieve  
 
 <Random>
 
-Returns one random post from e6 \
+Returns one random post from e6  
 Usage
 ```python
 e621.random()
 ```
 <Get Post>
 
-Returns the post from the given Id \
+Returns the post from the given Id  
 Usage:
 ```python
 e621.get_post(Id)
@@ -67,10 +67,10 @@ e621.get_post(Id)
 
 ## Post Object
 
-<A single post object is as follows> \
-id: The ID number of the post. \
-created_at: The time the post was created in the format of YYYY-MM-DDTHH:MM:SS.MS+00:00. \
-updated_at: The time the post was last updated in the format of YYYY-MM-DDTHH:MM:SS.MS+00:00. \
+<A single post object is as follows>  
+id: The ID number of the post.  
+created_at: The time the post was created in the format of YYYY-MM-DDTHH:MM:SS.MS+00:00.  
+updated_at: The time the post was last updated in the format of YYYY-MM-DDTHH:MM:SS.MS+00:00.  
 
 file (subclass)
 
@@ -110,8 +110,8 @@ tags (subclass)
     lore: A list of all the lore tags on the post.
     meta: A list of all the meta tags on the post.
 
-locked_tags: A JSON array of tags that are locked on the post. \
-change_seq: An ID that increases for every post alteration on E6 (explained below) \
+locked_tags: A JSON array of tags that are locked on the post.  
+change_seq: An ID that increases for every post alteration on E6 (explained below)  
 flags (subclass)
 
     pending: If the post is pending approval. (True/False)
@@ -121,20 +121,20 @@ flags (subclass)
     rating_locked: If the post’s rating has been locked. (True/False)
     deleted: If the post has been deleted. (True/False)
 
-rating: The post’s rating. Either s, q or e. \
-fav_count: How many people have favorited the post. \
-sources: The source field of the post. \
-pools: An array of Pool IDs that the post is a part of. \
+rating: The post’s rating. Either s, q or e.  
+fav_count: How many people have favorited the post.  
+sources: The source field of the post.  
+pools: An array of Pool IDs that the post is a part of.  
 relationships (subclass) 
 
     parent_id: The ID of the post’s parent, if it has one.
     has_children: If the post has child posts (True/False)
     has_active_children: children A list of child post IDs that are linked to the post, if it has any.
 
-approver_id: The ID of the user that approved the post, if available. \
-uploader_id: The ID of the user that uploaded the post. \
-description: The post’s description. \
-comment_count: The count of comments on the post. \
+approver_id: The ID of the user that approved the post, if available.  
+uploader_id: The ID of the user that uploaded the post.  
+description: The post’s description.  
+comment_count: The count of comments on the post.  
 ## Usage Example
 
 Below is a script that will grab a random post then print the post id, allong with the raw file url:
