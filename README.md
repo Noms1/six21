@@ -1,6 +1,7 @@
 
 # six21
 
+(First time ever doing something like this plz be nice lol)
 A python api wrapper for e621.net
 
 
