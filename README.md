@@ -68,9 +68,9 @@ e621.get_post(Id)
 ## Post Object
 
 <A single post object is as follows>  
-id: The ID number of the post.  
-created_at: The time the post was created in the format of YYYY-MM-DDTHH:MM:SS.MS+00:00.  
-updated_at: The time the post was last updated in the format of YYYY-MM-DDTHH:MM:SS.MS+00:00.  
+id: The ID number of the post.  <br />
+created_at: The time the post was created in the format of YYYY-MM-DDTHH:MM:SS.MS+00:00.  <br />
+updated_at: The time the post was last updated in the format of YYYY-MM-DDTHH:MM:SS.MS+00:00.  <br />
 
 file (subclass)
 
@@ -110,8 +110,8 @@ tags (subclass)
     lore: A list of all the lore tags on the post.
     meta: A list of all the meta tags on the post.
 
-locked_tags: A JSON array of tags that are locked on the post.  
-change_seq: An ID that increases for every post alteration on E6 (explained below)  
+locked_tags: A JSON array of tags that are locked on the post.  <br />
+change_seq: An ID that increases for every post alteration on E6 (explained below)  <br />
 flags (subclass)
 
     pending: If the post is pending approval. (True/False)
@@ -121,20 +121,20 @@ flags (subclass)
     rating_locked: If the post’s rating has been locked. (True/False)
     deleted: If the post has been deleted. (True/False)
 
-rating: The post’s rating. Either s, q or e.  
-fav_count: How many people have favorited the post.  
-sources: The source field of the post.  
-pools: An array of Pool IDs that the post is a part of.  
+rating: The post’s rating. Either s, q or e.  <br />
+fav_count: How many people have favorited the post.  <br />
+sources: The source field of the post.  <br />
+pools: An array of Pool IDs that the post is a part of.  <br />
 relationships (subclass) 
 
     parent_id: The ID of the post’s parent, if it has one.
     has_children: If the post has child posts (True/False)
     has_active_children: children A list of child post IDs that are linked to the post, if it has any.
 
-approver_id: The ID of the user that approved the post, if available.  
-uploader_id: The ID of the user that uploaded the post.  
-description: The post’s description.  
-comment_count: The count of comments on the post.  
+approver_id: The ID of the user that approved the post, if available.  <br />
+uploader_id: The ID of the user that uploaded the post.  <br />
+description: The post’s description.  <br />
+comment_count: The count of comments on the post.  <br />
 ## Usage Example
 
 Below is a script that will grab a random post then print the post id, allong with the raw file url:
