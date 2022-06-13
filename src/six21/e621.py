@@ -3,7 +3,8 @@ import requests, json
 base_url = "https://e621.net/"
 
 
-
+class Api:
+    UserAgent = ""
 
 
 def get_post(id):
@@ -56,11 +57,15 @@ def random():
 
     return Json_Post_to_Obj(postl)
 
+def Set_User(Name):
+    Api.UserAgent = Name
 
 
 def make_req(url):
-    
-    req = requests.get(url,headers={'User-Agent':"ExaoGen/0.4 -WIP"})
+    try:
+        req = requests.get(url,headers={'User-Agent':Api.UserAgent})
+    except:
+        raise CustomError("An error occurred, If this keeps happening, change your User.")
     return req
 
 def Json_Post_to_Obj(Json_Post):
@@ -131,8 +136,9 @@ def Json_Post_to_Obj(Json_Post):
         is_favorited = Json_Post["is_favorited"]
 
     return post
-
+Set_User("EnvNeos V0.1.6 -Wip")
 '''
+
 while True:
     inp = input("What U want 2 do? \nS: Search \nR: Recent \nG: Get post by ID \n \n")
     if inp == "r":
