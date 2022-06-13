@@ -23,7 +23,7 @@ First, import into your project
 from six21 import e621
 ```
 
-Set User to the name of your project with a version number. Eg: "MyProject v1.2"
+Set User to the name of your project with a version number. Ex: "MyProject v1.2"
 ```python
 e621.Set_User("NAME_OF_PROJECT")
 ```
