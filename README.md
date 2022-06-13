@@ -22,8 +22,8 @@ First, import into your project
 ```python
 from six21 import e621
 ```
-[optional]
-If needed set User to the name of your project
+
+Set User to the name of your project with a version number. Eg: "MyProject v1.2"
 ```python
 e621.Set_User("NAME_OF_PROJECT")
 ```
