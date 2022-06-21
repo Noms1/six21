@@ -136,8 +136,20 @@ def Json_Post_to_Obj(Json_Post):
         is_favorited = Json_Post["is_favorited"]
 
     return post
-Set_User("EnvNeos V0.1.6 -Wip")
+
+
+
+
+
+
+
+
+
 '''
+
+THIS IS A PROGRAM THAT WAS USED WHEN TESTING
+
+
 
 while True:
     inp = input("What U want 2 do? \nS: Search \nR: Recent \nG: Get post by ID \n \n")
