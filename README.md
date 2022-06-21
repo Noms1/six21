@@ -7,6 +7,7 @@ A python api wrapper for e621.net
 
 
 
+
 ## Features
 
 - Getting Recent Posts From e6
@@ -14,6 +15,9 @@ A python api wrapper for e621.net
 - Getting Random Posts
 - Getting An Post By Its Id
 
+## Limitations
+- Max page of 750
+- Hard limit of 320 posts per search/recent
 
 ## Usage 
 To use you need to have requests and json packages installed
