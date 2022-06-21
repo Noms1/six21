@@ -18,6 +18,7 @@ A python api wrapper for e621.net
 ## Limitations
 - Max page of 750
 - Hard limit of 320 posts per search/recent
+- Only 2 requests per seccond
 
 ## Usage 
 To use you need to have requests and json packages installed
